@@ -1,0 +1,86 @@
+[
+  {
+    "id": "leak-repair",
+    "name": "Leak Repair & Detection",
+    "slug": "leak-repair-bengaluru",
+    "short": "Fix visible and concealed leaks in kitchens, bathrooms, and pipelines.",
+    "details": [
+      "Hidden leak detection",
+      "Pipe repair or replacement",
+      "Sealant and pressure testing"
+    ],
+    "priceRange": "₹499–₹1,999",
+    "duration": "30–120 min",
+    "image": "LEAK.avif"
+  },
+  {
+    "id": "tap-installation",
+    "name": "Tap & Mixer Installation",
+    "slug": "tap-installation-bengaluru",
+    "short": "Professional installation and replacement of taps and mixers.",
+    "details": [
+      "Single & mixer taps",
+      "Wall-mounted & countertop",
+      "Leak-proof fittings"
+    ],
+    "priceRange": "₹299–₹899",
+    "duration": "20–60 min",
+   "image": "TAP.avif"
+  },
+  {
+    "id": "bathroom-fitting",
+    "name": "Bathroom Fittings & Renovation",
+    "slug": "bathroom-fitting-bengaluru",
+    "short": "Complete bathroom fitting and renovation services.",
+    "details": [
+      "Wash basin, showers, commode",
+      "Full bathroom setup",
+      "Modern fittings installation"
+    ],
+    "priceRange": "₹1,499–₹9,999",
+    "duration": "1–3 days",
+   "image": "BATHROOM1.avif"
+  },
+  {
+    "id": "drain-cleaning",
+    "name": "Drain & Pipe Cleaning",
+    "slug": "drain-cleaning-bengaluru",
+    "short": "Clogged kitchen, bathroom, and toilet drains cleared quickly.",
+    "details": [
+      "Sink, toilet, and shower drains",
+      "High-pressure cleaning",
+      "Safe for pipes"
+    ],
+    "priceRange": "₹399–₹1,499",
+    "duration": "30–90 min",
+    "image": "DRAIN.avif"
+  },
+  {
+    "id": "water-heater-installation",
+    "name": "Water Heater Installation & Service",
+    "slug": "water-heater-installation-bengaluru",
+    "short": "Install and maintain instant and storage water heaters.",
+    "details": [
+      "Geyser installation",
+      "Repairs and service",
+      "Safety checks"
+    ],
+    "priceRange": "₹599–₹2,499",
+    "duration": "45–120 min",
+    "image": "WaterHeater.avif"
+  },
+  {
+    "id": "water-tank-cleaning",
+    "name": "Water Tank Cleaning & Pipeline Fitting",
+    "slug": "water-tank-cleaning-bengaluru",
+    "short": "Comprehensive water tank cleaning and new pipe fittings.",
+    "details": [
+      "Overhead/underground tanks",
+      "Pipeline repairs",
+      "Installation of new connections"
+    ],
+    "priceRange": "₹999–₹3,999",
+    "duration": "2–4 hrs",
+    "image": "WaterTankCleaning.jpg"
+  }
+]

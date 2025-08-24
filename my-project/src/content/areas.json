@@ -1,0 +1,12 @@
+[
+  {"slug": "electronic-city-plumber", "name": "Electronic City"},
+  {"slug": "hsr-layout-plumber", "name": "HSR Layout"},
+  {"slug": "koramangala-plumber", "name": "Koramangala"},
+  {"slug": "btm-layout-plumber", "name": "BTM Layout"},
+  {"slug": "whitefield-plumber", "name": "Whitefield"},
+  {"slug": "indiranagar-plumber", "name": "Indiranagar"},
+  {"slug": "jp-nagar-plumber", "name": "JP Nagar"},
+  {"slug": "jayanagar-plumber", "name": "Jayanagar"},
+  {"slug": "marathahalli-plumber", "name": "Marathahalli"},
+  {"slug": "bellandur-plumber", "name": "Bellandur"}
+]

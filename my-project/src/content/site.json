@@ -1,0 +1,10 @@
+{
+  "brand": "SN Plumbing Service",
+  "phone": "+91-8249692563",
+  "whatsapp": "+91-8249692563",
+  "email": "contact@snplumbing.in",
+  "address": "Electronic City, Hosur Road, Bengaluru, 560100",
+  "hours": {
+    "mon-sun": "8:00–22:00"
+  }
+}
