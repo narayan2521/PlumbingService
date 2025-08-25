@@ -1,4 +1,13 @@
-[
+{
+  "banner": {
+    "title": "Professional Plumbing Services You Can Trust",
+    "description":
+      "From minor leaks to major installations, we deliver reliable plumbing solutions for homes and businesses.",
+    "ctaText": "Book a Service",
+    "ctaLink": "/contact",
+    "image": "/images/plumbing-banner.jpg"
+  },
+  "services": [
   {
     "id": "leak-repair",
     "name": "Leak Repair & Detection",
@@ -84,3 +93,5 @@
     "image": "WaterTankCleaning.jpg"
   }
 ]
+
+}

@@ -1,0 +1,25 @@
+ 
+.Services_Banner_Section img {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    filter: brightness(50%);
+    height: 400px;
+    object-fit: cover;
+    width: 100%; 
+}
+ .content_section {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-color: #ffffff2b;
+    border-radius: 23px;
+    bottom: 23%;
+    color: #fff;
+    left: 29%;
+    padding: 2.5%;
+    position: absolute;
+    width: 40%;
+}   
+.Services_Banner_Section {
+    height: 400px;
+    position: relative;
+}

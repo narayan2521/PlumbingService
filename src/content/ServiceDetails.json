@@ -1,0 +1,86 @@
+{
+  "leak-repair": {
+    "id": "leak-repair",
+    "title": "Leak Repair & Detection",
+    "subtitle": "Fix visible and concealed leaks in kitchens, bathrooms, and pipelines.",
+    "backgroundImage": "LEAK.avif",
+    "description": "Our leak repair and detection service ensures quick identification and fixing of leaks in your plumbing system to prevent damage and water loss.",
+    "price": "Starts at ₹499",
+    "features": [
+      "Detection of hidden leaks",
+      "Repair of kitchen and bathroom leaks",
+      "Pipeline leakage solutions",
+      "Emergency leak repair service"
+    ]
+  },
+  "tap-mixer-installation": {
+    "id": "tap-mixer-installation",
+    "title": "Tap & Mixer Installation",
+    "subtitle": "Professional installation and replacement of taps and mixers.",
+    "backgroundImage": "TAP.avif",
+    "description": "Our experts install taps and mixers with precision, ensuring no leakage and long-term durability.",
+    "price": "Starts at ₹299",
+    "features": [
+      "Installation of kitchen and bathroom taps",
+      "Mixer replacement and fitting",
+      "Leak-proof installation",
+      "Branded fittings available"
+    ]
+  },
+  "bathroom-renovation": {
+    "id": "bathroom-renovation",
+    "title": "Bathroom Fittings & Renovation",
+    "subtitle": "Complete bathroom fitting and renovation services.",
+    "backgroundImage": "BATHROOM1.avif",
+    "description": "We provide complete bathroom renovation including fittings, tiling, and plumbing work.",
+    "price": "Starts at ₹1,999",
+    "features": [
+      "Full bathroom redesign",
+      "Premium fittings installation",
+      "Pipeline and drainage setup",
+      "Affordable renovation packages"
+    ]
+  },
+  "drain-cleaning": {
+    "id": "drain-cleaning",
+    "title": "Drain & Pipe Cleaning",
+    "subtitle": "Clogged kitchen, bathroom, and toilet drains cleared quickly.",
+    "backgroundImage": "DRAIN.avif",
+    "description": "We provide professional drain and pipe cleaning to remove blockages and restore proper flow.",
+    "price": "Starts at ₹399",
+    "features": [
+      "Kitchen drain cleaning",
+      "Bathroom and toilet unclogging",
+      "High-pressure jet cleaning",
+      "Odor and germ removal"
+    ]
+  },
+  "water-heater-service": {
+    "id": "water-heater-service",
+    "title": "Water Heater Installation & Service",
+    "subtitle": "Install and maintain instant and storage water heaters.",
+    "backgroundImage": "WaterHeater.avif",
+    "description": "Our technicians handle installation and servicing of all types of water heaters to ensure safe and efficient operation.",
+    "price": "Starts at ₹799",
+    "features": [
+      "Instant and storage heater installation",
+      "Water heater repair and maintenance",
+      "Thermostat and element replacement",
+      "Safe and reliable service"
+    ]
+  },
+  "water-tank-cleaning": {
+    "id": "water-tank-cleaning",
+    "title": "Water Tank Cleaning & Pipeline Fitting",
+    "subtitle": "Comprehensive water tank cleaning and new pipe fittings.",
+    "backgroundImage": "WaterTankCleaning.jpg",
+    "description": "We ensure clean and safe water supply through professional tank cleaning and secure pipeline fittings.",
+    "price": "Starts at ₹999",
+    "features": [
+      "Manual and chemical tank cleaning",
+      "Pipeline fitting and replacement",
+      "Removal of sludge and impurities",
+      "Hygienic water storage solutions"
+    ]
+  }
+}

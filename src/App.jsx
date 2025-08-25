@@ -7,10 +7,12 @@ import ServiceDetail from "./pages/ServiceDetails";
 // import Areas from "./pages/Areas";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
