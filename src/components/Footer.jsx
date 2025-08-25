@@ -92,10 +92,10 @@ const Footer = () => {
           <div>
             <h2 className="text-lg font-semibold text-white mb-4">Our Services</h2>
             <ul className="space-y-3">
-              <li><a href="#" className="hover:text-blue-400 transition-colors flex items-center"><i className="fas fa-wrench text-xs mr-2 text-blue-500"></i> Leak Repair</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors flex items-center"><i className="fas fa-shower text-xs mr-2 text-blue-500"></i> Bathroom Plumbing</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors flex items-center"><i className="fas fa-tint text-xs mr-2 text-blue-500"></i> Pipe Installation</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors flex items-center"><i className="fas fa-toolbox text-xs mr-2 text-blue-500"></i> Maintenance</a></li>
+              <li><Link   to={`/services/leak-repair`}  className="hover:text-blue-400 transition-colors flex items-center"><i className="fas fa-wrench text-xs mr-2 text-blue-500"></i> Leak Repair</Link></li>
+              <li><Link   to={`/services/bathroom-renovation`}  className="hover:text-blue-400 transition-colors flex items-center"><i className="fas fa-shower text-xs mr-2 text-blue-500"></i> Bathroom Plumbing</Link></li>
+              <li><Link   to={`/services/tap-mixer-installation`}  className="hover:text-blue-400 transition-colors flex items-center"><i className="fas fa-tint text-xs mr-2 text-blue-500"></i> Pipe Installation</Link></li>
+              <li><Link   to={`/services/water-heater-service`}  className="hover:text-blue-400 transition-colors flex items-center"><i className="fas fa-toolbox text-xs mr-2 text-blue-500"></i> Maintenance</Link></li>
             </ul>
           </div>
 

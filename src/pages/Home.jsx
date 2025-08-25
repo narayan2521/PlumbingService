@@ -145,6 +145,7 @@ import servicesData from "../content/services.json";
 import areasData from "../content/areas.json";
 import bannerImage from '../assets/banner3.jpg';
 import { Link } from "react-router-dom";
+import SEO from "../components/SEO";
 
 
 
@@ -260,7 +261,12 @@ const Home = () => {
 };
 
   return (
-    <div className="w-full overflow-hidden">
+    <>
+      <SEO
+        title="Plumbease | Reliable Plumbing Services | 24/7 Emergency Plumbers Near You"
+        description="Expert plumbing services for homes and businesses. We offer 24/7 emergency repairs, leak detection, pipe installation, and drain cleaning. Call us today!"
+      />
+     <div className="w-full overflow-hidden">
       {/* Hero Section */}
       <section className="relative w-full h-screen max-h-[700px]">
         <div className="absolute inset-0 bg-black/40 z-10"></div>
@@ -598,6 +604,8 @@ const Home = () => {
         </div>
       </section>
     </div>
+    </>
+   
   );
 };
 
