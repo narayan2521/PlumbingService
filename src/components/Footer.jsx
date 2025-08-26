@@ -58,7 +58,7 @@ const Footer = () => {
               </div>
               <h2 className="text-2xl font-bold text-white">PlumbEase</h2>
             </div>
-            <p className="mb-4">Your trusted plumbing solution for homes & businesses in Kendrapara and surrounding areas.</p>
+            <p className="mb-4">Your trusted plumbing solution for homes & businesses in Bengaluru and surrounding areas.</p>
             
             {/* Social Media Links */}
             <div className="flex space-x-4 mt-6">
@@ -165,9 +165,9 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-8 pt-6 text-center text-gray-400">
           <p>© {new Date().getFullYear()} PlumbEase. All rights reserved.</p>
           <div className="flex justify-center space-x-6 mt-2">
-            <a href="#" className="hover:text-blue-400 transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-blue-400 transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-blue-400 transition-colors">Sitemap</a>
+            <Link to={'/privacy-policy'} className="hover:text-blue-400 transition-colors">Privacy Policy</Link>
+            <Link to={'/terms-of-service'} className="hover:text-blue-400 transition-colors">Terms of Service</Link>
+            <Link to={'/sitemap'} className="hover:text-blue-400 transition-colors">Sitemap</Link>
           </div>
         </div>
       </div>

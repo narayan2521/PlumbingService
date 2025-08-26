@@ -32,23 +32,39 @@
 import React from "react";
 import "../styles/commonbanner.css";
 
-const CommonBanner = ({ title, subtitle, backgroundImage }) => {
+const CommonBanner = ({ title, subtitle, backgroundImage,name }) => {
   // Dynamically import images from assets/services folder
   const images = import.meta.glob("../assets/services/*", { eager: true });
+  const bannerImage = import.meta.glob("../assets/banner/*", { eager: true });
 
   const getImageByName = (fileName) => {
     return images[`../assets/services/${fileName}`]?.default || null;
   };
+    const getBannerImageByName = (fileName) => {
+    return bannerImage[`../assets/banner/${fileName}`]?.default || null;
+  };
+
 
   return (
     <div className="Services_Banner_Section relative w-full">
       {/* Banner Image */}
       <div className="banner_image  ">
-        <img
+        {
+          name != null?(
+               <img
+          src={getBannerImageByName(backgroundImage)}
+          alt="banner_image"
+          className="w-full h-[400px] object-cover brightness-50"
+        />
+          ) :(
+             <img
           src={getImageByName(backgroundImage)}
           alt="banner_image"
           className="w-full h-[400px] object-cover brightness-50"
         />
+          )
+        }
+       
       </div>
 
       {/* Overlay Content */}

@@ -7,7 +7,8 @@ const About = () => {
       <CommonBanner
         title="About Us"
         subtitle="Your Trusted Financial & Tax Advisors"
-        backgroundImage="https://images.unsplash.com/photo-1554224154-22dec7ec8818"
+        backgroundImage="about.avif"
+        name = "about"
       />
 
       <section className="max-w-6xl mx-auto px-4 py-10">

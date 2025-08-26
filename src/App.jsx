@@ -8,6 +8,9 @@ import ServiceDetail from "./pages/ServiceDetails";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import ScrollToTop from "./components/ScrollToTop";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
+import Sitemap from "./pages/Sitemap";
 
 function App() {
   return (
@@ -20,8 +23,11 @@ function App() {
         <Route path="/services/:id" element={<ServiceDetail />} />
         {/* <Route path="/areas" element={<Areas />} /> */}
         <Route path="/contact" element={<Contact />} />
-        
-              <Route path="/about" element={<About />} />
+
+        <Route path="/about" element={<About />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-of-service" element={<TermsOfService />} />
+        <Route path="/sitemap" element={<Sitemap />} />
       </Routes>
       <Footer />
     </Router>

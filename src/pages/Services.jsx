@@ -42,6 +42,14 @@ const Services = () => {
 
   return (
     <>
+      <CommonBanner
+        title="Professional Plumbing Services You Can Trust"
+        subtitle="Reliable, Affordable, and Available 24/7 for Your Plumbing Needs"
+        backgroundImage="Services.jpg"
+        name="Services"
+      />
+
+
        {/* <section className="relative bg-gray-100 py-10">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center px-6">
           <div className="md:w-1/2">

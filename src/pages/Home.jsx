@@ -147,6 +147,7 @@ import bannerImage from '../assets/banner3.jpg';
 import { Link } from "react-router-dom";
 import SEO from "../components/SEO";
 
+import CountUp from "react-countup";
 
 
 
@@ -259,6 +260,13 @@ const Home = () => {
  const getImageByName = (fileName) => {
   return images[`../assets/services/${fileName}`]?.default || null;
 };
+ const stats = [
+    { number: 6, suffix: "+", label: "Years Experience" },
+    { number: 2000, suffix: "+", label: "Happy Customers" },
+    { number: 24, suffix: "/7", label: "Emergency Service" },
+    { number: 90, suffix: "%", label: "Repeat Customers" },
+  ];
+
 
   return (
     <>
@@ -277,58 +285,85 @@ const Home = () => {
         />
         
         <motion.div 
-          initial="hidden"
-          animate="visible"
-          variants={fadeIn}
-          className="absolute inset-0 z-20 flex items-center justify-center"
+      initial="hidden"
+      animate="visible"
+      variants={fadeIn}
+      className="absolute inset-0 z-20 flex items-center justify-center"
+    >
+      <div className="max-w-3xl px-6 text-center text-white">
+        {/* Heading */}
+        <motion.h1 
+          className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <div className="max-w-3xl px-6 text-center text-white">
-            <motion.h1 
-              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            >
-              Fast, Reliable Plumbing in Bengaluru
-            </motion.h1>
-            
-            <motion.p 
-              className="text-xl md:text-2xl mb-8"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-            >
-              6+ Years Experience | 60–90 min Arrival | 8 AM – 10 PM
-            </motion.p>
-            
-            <motion.div 
-              className="flex flex-col sm:flex-row justify-center gap-4"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-            >
-              <motion.a
-                href="tel:+918249692563"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-white text-blue-600 font-semibold px-8 py-4 rounded-lg shadow-lg hover:bg-gray-100 flex items-center justify-center gap-2"
-              >
-                <i className="fas fa-phone"></i>
-                Call Now
-              </motion.a>
-              
-              <motion.a
-                href="https://wa.me/918249692563"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-green-500 text-white font-semibold px-8 py-4 rounded-lg shadow-lg hover:bg-green-600 flex items-center justify-center gap-2"
-              >
-                <i className="fab fa-whatsapp"></i>
-                WhatsApp
-              </motion.a>
-            </motion.div>
-          </div>
+          Fast, Reliable Plumbing in Bengaluru
+        </motion.h1>
+        
+        {/* Subtext */}
+        <motion.p 
+          className="text-xl md:text-2xl mb-8"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+        >
+          6+ Years Experience | 60–90 min Arrival | 8 AM – 10 PM
+        </motion.p>
+        
+        {/* Call Buttons */}
+        <motion.div 
+          className="flex flex-col sm:flex-row justify-center gap-4 mb-10"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+        >
+          <motion.a
+            href="tel:+918249692563"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-white text-blue-600 font-semibold px-8 py-4 rounded-lg shadow-lg hover:bg-gray-100 flex items-center justify-center gap-2"
+          >
+            <i className="fas fa-phone"></i>
+            Call Now
+          </motion.a>
+          
+          <motion.a
+            href="https://wa.me/918249692563"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-green-500 text-white font-semibold px-8 py-4 rounded-lg shadow-lg hover:bg-green-600 flex items-center justify-center gap-2"
+          >
+            <i className="fab fa-whatsapp"></i>
+            WhatsApp
+          </motion.a>
         </motion.div>
+
+        {/* Counters */}
+        <div className="flex flex-wrap justify-center gap-8 mt-6">
+          <div className="text-center">
+            <h3 className="text-4xl font-bold">
+              <CountUp end={6} duration={2} />+
+            </h3>
+            <p className="text-gray-200">Years Experience</p>
+          </div>
+
+          <div className="text-center">
+            <h3 className="text-4xl font-bold">
+              <CountUp end={1200} duration={2} />
+            </h3>
+            <p className="text-gray-200">Jobs Completed</p>
+          </div>
+
+          <div className="text-center">
+            <h3 className="text-4xl font-bold">
+              <CountUp end={950} duration={2} />
+            </h3>
+            <p className="text-gray-200">Happy Customers</p>
+          </div>
+        </div>
+      </div>
+    </motion.div>
         
         {/* Scroll indicator */}
         <motion.div 
@@ -344,30 +379,32 @@ const Home = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-blue-50">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {[
-              { number: "6+", label: "Years Experience" },
-              { number: "2000+", label: "Happy Customers" },
-              { number: "24/7", label: "Emergency Service" },
-              { number: "90%", label: "Repeat Customers" }
-            ].map((stat, index) => (
-              <motion.div 
-                key={index}
-                className="text-center p-6 bg-white rounded-xl shadow-md"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
-                <h3 className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">{stat.number}</h3>
-                <p className="text-gray-600">{stat.label}</p>
-              </motion.div>
-            ))}
-          </div>
+    <section className="py-16 bg-blue-50">
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          {stats.map((stat, index) => (
+            <motion.div
+              key={index}
+              className="text-center p-6 bg-white rounded-xl shadow-md"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+              viewport={{ once: true }}
+            >
+              <h3 className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">
+                <CountUp
+                  start={0}
+                  end={stat.number}
+                  duration={2}
+                  suffix={stat.suffix}
+                />
+              </h3>
+              <p className="text-gray-600">{stat.label}</p>
+            </motion.div>
+          ))}
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* Services Section */}
       <section className="py-16 px-4 max-w-6xl mx-auto">
@@ -552,7 +589,11 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-blue-600 text-white">
+      <section className="py-16 bg-blue-600 text-black"
+       style={{
+        backgroundColor:"#74b1daba"
+       }}
+      >
         <div className="max-w-4xl mx-auto px-4 text-center">
           <motion.h2 
             className="text-3xl md:text-4xl font-bold mb-6"
